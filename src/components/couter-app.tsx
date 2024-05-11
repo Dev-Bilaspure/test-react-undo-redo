@@ -13,7 +13,11 @@ export default function CounterApp() {
     },
   });
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full h-screen flex flex-col gap-10 items-center justify-center">
+      <div className="w-full flex flex-col gap-4 items-center justify-center">
+        <p className="font-semibold">Cmd/Ctrl + z to undo</p>
+        <p className="font-semibold">Cmd/Ctrl + Shift + z to redo</p>
+      </div>
       <div className="flex flex-col gap-5 items-center">
         <p className="text-2xl">{count}</p>
         <div className="flex items-center gap-5">
